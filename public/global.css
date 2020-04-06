@@ -35,6 +35,12 @@
     outline: none;
 }
 
+.btn-sm {
+    font-size: .8rem;
+    padding: .3rem 1rem;
+    margin-right: .2rem;
+}
+
 .btn-dark{
     background: var(--dark-color);
     color: #fff;
