@@ -39,3 +39,15 @@
     background: var(--dark-color);
     color: #fff;
 }
+
+input {
+    margin: 1.2rem 0;
+}
+
+input[type='number']{
+    display: block;
+    width: 100% !important;
+    padding: 0.4rem;
+    font-size: inherit;
+    border: 1px solid #ccc;
+}
