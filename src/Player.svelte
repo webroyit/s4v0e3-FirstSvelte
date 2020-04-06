@@ -1,7 +1,7 @@
 <script>
 	// variables
-	let name = "Roy";
-	let points = 100;
+	export let name;
+	export let points;
 	let showControls = false;
 
 	const addPoint = () => (points += 1);
