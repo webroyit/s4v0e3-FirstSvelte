@@ -1,4 +1,6 @@
 <script>
+	import Navbar from './Navbar.svelte';
+
 	// variables
 	let name = "Roy";
 	let points = 100;
@@ -19,6 +21,7 @@
 	}
 </style>
 
+<Navbar />
 <div class="container">
 	<div class="card">
 		<h1>
@@ -27,7 +30,7 @@
 				{#if showControls}Hide{:else}Show{/if}
 			</button>
 		</h1>
-		<h3>{points}</h3>
+		<h3>Points: {points}</h3>
 
 		{#if showControls}
 			<button class="btn" on:click={addPoint}>+1</button>

@@ -1,4 +1,5 @@
 :root {
+    --primary-color: #2a812f;
     --dark-color: #313030;
     --light-color: #f3f0f0;
 }
@@ -14,6 +15,18 @@
     margin: auto;
     overflow: hidden;
     padding: 0 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 2rem;
+    z-index: 1;
+    width: 100%;
+    border-bottom: solid 1px var(--primary-color);
+    opacity: 0.9;
+    margin-bottom: 1rem;
 }
 
 .card{
@@ -39,6 +52,11 @@
     font-size: .8rem;
     padding: .3rem 1rem;
     margin-right: .2rem;
+}
+
+.bg-primary{
+    background: var(--primary-color);
+    color: #fff;
 }
 
 .btn-dark{
