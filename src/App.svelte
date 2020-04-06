@@ -2,6 +2,9 @@
 	// variables
 	let name = "Roy";
 	let points = 100;
+
+	const addPoint = () => points += 1;
+	const removePoint = () => points -= 1;
 </script>
 
 <style>
