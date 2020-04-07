@@ -18,11 +18,19 @@
 		}
 	];
 
+	const addPlayer = e => {
+		// get the value from another component
+		const newPlayer = e.detail;
+
+		// merge the array with newPlayer data
+		players = [newPlayer, ...players];
+	};
+
 </script>
 
 <Navbar />
 <div class="container">
-	<AddPlayer />
+	<AddPlayer on:addplayer={addPlayer} />
 	{#if players.length === 0}
 		<p>No Players yet</p>
 	{:else}
