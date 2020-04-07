@@ -1,5 +1,6 @@
 <script>
-	// variables
+    // variables
+    // export to get the value from the parent component
 	export let name;
 	export let points;
 	let showControls = false;

@@ -64,14 +64,26 @@
     color: #fff;
 }
 
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
 input {
     margin: 1.2rem 0;
 }
 
+input[type='text'],
 input[type='number']{
     display: block;
     width: 100% !important;
     padding: 0.4rem;
     font-size: inherit;
     border: 1px solid #ccc;
+}
+
+input[type='submit'],
+button {
+  font: inherit;
 }
