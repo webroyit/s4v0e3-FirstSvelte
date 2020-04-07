@@ -1,4 +1,8 @@
 <script>
+    import { createEventDispatcher } from 'svelte';
+
+    const dispatch = createEventDispatcher();
+
     // variables
     // export to get the value from the parent component
 	export let name;
@@ -26,6 +30,7 @@
         <button class="btn btn-sm" on:click={toggleControls}>
             {#if showControls}Hide{:else}Show{/if}
         </button>
+        <button class="btn btn-danger btn-sm" on:click={() => dispatch("removeplayer", name)}>x</button>
     </h1>
     <h3>Points: {points}</h3>
 

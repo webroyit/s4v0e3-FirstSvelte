@@ -2,6 +2,7 @@
     --primary-color: #2a812f;
     --dark-color: #313030;
     --light-color: #f3f0f0;
+    --danger-color: #c82f3f;
 }
 
 *{
@@ -37,7 +38,6 @@
 
 .btn {
     display: inline-block;
-    background: var(--light-color);
     color: #333;
     padding: 0.4rem 1.3rem;
     font-size: 1rem;
@@ -54,13 +54,23 @@
     margin-right: .2rem;
 }
 
-.bg-primary{
-    background: var(--primary-color);
+.btn-primary{
+    background-color: var(--primary-color);
     color: #fff;
 }
 
 .btn-dark{
-    background: var(--dark-color);
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
+.btn-danger{
+    background: var(--danger-color);
+    color: #fff;
+}
+
+.bg-primary{
+    background-color: var(--primary-color);
     color: #fff;
 }
 
