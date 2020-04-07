@@ -97,3 +97,13 @@ input[type='submit'],
 button {
   font: inherit;
 }
+
+@media (max-width: 700px){
+    .grid-3{
+        grid-template-columns: 1fr;
+    }
+
+    input {
+        margin: .5rem 0;
+    }
+}
